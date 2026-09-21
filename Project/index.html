@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,31 +9,89 @@
     <title>Homepage | Department of Information and Communication Technologies</title>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="#specialties">Спеціальності</a></li>
-        <li><a href="#science">Наука</a></li>
-        <li><a href="#news">Новини</a></li>
-        <li><a href="#contact">Контакти</a></li>
-    </ul>
-</nav>
-<h1>Створюй майбутнє. Тут і зараз!</h1>
-<p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
-<h2>Наші спеціальності.</h2>
-<p>Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.</p>
-<h2>Якщо в числах.</h2>
-<h2>Наука та інновації.</h2>
-<p>Від аудиторії — до реального проєкту.</p>
-<p>“Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах, розробляють ІТ- рішення, створюють стартапи та співпрацюють з компаніями- партнерами. На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати себе ще під час навчання. Дослідження, що перетворюються на продукт — саме тут це можливо.</p>
-<h2>Нам довіряють.</h2>
-<h2>Контакти.</h2>
-<p>61070, Харків, вул. Вадима Манька, 17</p>
-<p>НАУ ім. М.Є.Жуковського "ХАІ</p>
-<p>Кафедра інформаційно-комунікаційних технологій No504.</p>
-<h2>Новини.</h2>
-<p><a href="mailto:k504@khai.edu">k504@khai.edu</a> </p>
-<p><a href="tel:+380995025775">+38 (099) 502-57-75</a> </p>
-<img src="images/logo.svg" alt="Логотип кафедри">
-<script src="js/main.js"></script>
+<header>
+    <a href="#">
+        <img src="images/logo.svg" alt="Логотип кафедри">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="#specialties">Спеціальності</a></li>
+            <li><a href="#science">Наука</a></li>
+            <li><a href="#news">Новини</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+    <a href="#">
+        <img src="images/magnifier.svg" alt="Пошук" width="32">
+    </a>
+    <span>
+        <a href="?lang=ua">UA</a> | <a href="?lang=en">EN</a>
+    </span>
+</header>
+<main>
+    <section id="Banner">
+        <img src="images/Man.png" alt="Banner">
+        <h1>Створюй майбутнє. Тут і зараз!</h1>
+        <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+    </section>
+    <section id="specialties">
+        <h2>Наші спеціальності.</h2>
+        <p>Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.</p>
+        <article>
+            <h2>Якщо в числах.</h2>
+        </article>
+    </section>
+    <section id="reviews">
+        <h2>Відгуки випускників.</h2>
+        <article>
+            <p>Аудіо-відгук випускника:</p>
+            <audio controls>
+                <source src="audio/mpeg.m4a" type="audio/mpeg">
+                Ваш браузер не підтримує аудіоелемент.
+            </audio>
+        </article>
+    </section>
+    <section id="science">
+        <h2>Наука та інновації.</h2>
+        <img src="images/images.png" alt="Science">
+        <article>
+            <p>Від аудиторії — до реального проєкту.</p>
+            <p>“Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах, розробляють ІТ- рішення, створюють стартапи та співпрацюють з компаніями- партнерами. На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати себе ще під час навчання. Дослідження, що перетворюються на продукт — саме тут це можливо.</p>
+        </article>
+    </section>
+    <section>
+        <h2>Нам довіряють.</h2>
+        <img src="images/logohai1.png" alt="Logo" title="Logo Sigma">
+        <img src="images/logohai2.png" alt="Logo" title="Logo Epam">
+        <img src="images/logohai3.png" alt="Logo" title="Logo Softserve">
+        <img src="images/logohai4.png" alt="Logo" title="Logo DataArt">
+        <img src="images/logohai5.png" alt="Logo" title="Logo GlobalLogic">
+        <img src="images/logohai6.png" alt="Logo" title="Logo Nix">
+    </section>
+    <section id="contact">
+        <h2>Контакти.</h2>
+        <address>
+            <p>61070, Харків, вул. Вадима Манька, 17</p>
+            <p>НАУ ім. М.Є.Жуковського "ХАІ</p>
+            <p>Кафедра інформаційно-комунікаційних технологій No504.</p>
+        </address>
+    </section>
+    <section id="news">
+        <h2>Новини.</h2>
+        <video autoplay loop muted width="100%">
+            <source src="video/news-preview.mp4" type="video/mp4">
+            Ваш браузер не підтримує відеоелемент.
+        </video>
+    </section>
+</main>
+<footer>
+    <address>
+        <a href="#">
+            <img src="images/logo.svg" alt="Логотип кафедри">
+        </a>
+        <p><a href="mailto:k504@khai.edu">k504@khai.edu</a> </p>
+        <p><a href="tel:+380995025775">+38 (099) 502-57-75</a> </p>
+    </address>
+</footer>
 </body>
 </html>
