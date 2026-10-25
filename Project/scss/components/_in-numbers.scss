@@ -1,0 +1,15 @@
+#numbers {
+  article {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:not(:last-child) .text_numbers {
+      border-left: 1px solid $red;
+    }
+  }
+}
+
+.text_numbers {
+  padding: 10px;
+}

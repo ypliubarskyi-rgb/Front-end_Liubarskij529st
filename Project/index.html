@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <title>Homepage | Department of Information and Communication Technologies</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
 <header>
     <a href="#">
         <img src="images/logo.svg" alt="Логотип кафедри">
@@ -28,17 +29,29 @@
         <a href="?lang=ua">UA</a> | <a href="?lang=en">EN</a>
     </span>
 </header>
+
 <main>
     <section id="Banner">
         <img src="images/Man.png" alt="Banner">
         <h1>Створюй майбутнє. Тут і зараз!</h1>
         <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
     </section>
+
     <section id="specialties">
         <h2>Наші спеціальності.</h2>
-        <p>Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.</p>
+        <p>Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома напрямками.</p>
+        <article>
+            <div class="text_specialties">
+                <h3>G5 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.</h3>
+                <p>У межах спеціальності G5 «Електроніка, електронні комунікації, приладобудування та радіотехніка» Національний аерокосмічний університет «ХАІ» та кафедра інформаційних і комунікаційних технологій №504 реалізують освітньо-професійну програму «Інжиніринг і програмування інфокомунікаційних систем»</p>
+            </div>
+        </article>
         <article>
             <h2>Якщо в числах.</h2>
+            <div class="text_specialties">
+                <h3>F6 - бакалаврський рівень «Штучний інтелект та інформаційні системи»</h3>
+                <p>Кафедра Інформаційно-комунікаційних технологій імені О.О. Зеленського має понад 60 років досвіду освітньої та наукової діяльності. Сьогодні кафедра готує висококваліфікованих фахівців у галузі інформаційних технологій, електронних комунікацій та інфокомунікаційних систем за наступними програмами:</p>
+            </div>
         </article>
     </section>
 
@@ -130,11 +143,11 @@
         </table>
 
         <article>
-            <p>Перший предмет "Основи інфокомунікацій" розповість про цілі навчання освітньої програми, сучасні тенденції в інфокомунікаціях і інформаційних технологіях, можливості і варіанти вашого розвитку[cite: 1]. Як і в усьому ХАІ, студент формує свою власну навчальну траєкторію вже на 1-му курсі за допомогою дисциплін за вибором: "Іноземна мова", "Українські студії", "Гуманітарна або економічна дисципліна за вибором" і "Правова компетентність за вибором"[cite: 1]. Вони розвивають у студентів так звані "м'які" навички (Soft Skills) і полегшують весь процес навчання[cite: 1].</p>
-
-            <p>Фундаментальні курси "Вища математика", "Дискретна математика", "Фізика" формують основу для вивчення подальших прикладних курсів[cite: 1]. "Основи теорії кіл" почнуть знайомство з електронікою в цілому[cite: 1]. Паралельно з розвитком м'яких навичок і формуванням фундаменту для технічної частини, ми посилено викладаємо студентам програмування[cite: 1]. В "Основах програмування" вивчається мова програмування Python, інтегровані середовища розробки, системи контролю версій, різні бібліотеки і інструменти[cite: 1]. Python панує як мова програмування в даній освітній програмі і практично у всьому навчальному процесі[cite: 1]. "Алгоритми і структури даних" також розширюють знання і розвивають навички в програмуванні як розробника мережевих додатків, так і систем обробки даних[cite: 1]. "Навчальна практика" присвячується вивченню операційних систем на базі ядра Linux, що є основою для більшості інформаційних систем[cite: 1].</p>
+            <p>Перший предмет "Основи інфокомунікацій" розповість про цілі навчання освітньої програми, сучасні тенденції в інфокомунікаціях і інформаційних технологіях, можливості і варіанти вашого розвитку.</p>
+            <p>Фундаментальні курси "Вища математика", "Дискретна математика", "Фізика" формують основу для вивчення подальших прикладних курсів.</p>
         </article>
     </section>
+
     <section>
         <h2>Форма зворотного зв'язку з абітурієнтами</h2>
         <form action="#" method="post">
@@ -143,67 +156,95 @@
                 <input type="text" id="fullname" name="fullname" placeholder="Your answer" required>
             </p>
             <p>
-                <label for="contactYour">Контактний телефон<span style="color: red;">*</span><br></label>
+                <label for="phone">Контактний телефон<span style="color: red;">*</span><br></label>
                 <input type="tel" id="phone" name="phone" placeholder="Your phone" required>
             </p>
             <p>
                 <label for="email">Електронна пошта <span style="color: red;">*</span></label><br>
                 <input type="email" id="email" name="email" placeholder="Your email address" required>
             </p>
-
             <p>
                 <label for="telegram">Телеграм <span style="color: red;">*</span></label><br>
                 <input type="text" id="telegram" name="telegram" placeholder="Your answer" required>
             </p>
-
             <p>
                 <label for="nmt-math">Бали НМТ - Математика <span style="color: red;">*</span></label><br>
                 <input type="text" id="nmt-math" name="nmt_math" placeholder="Your answer" required>
             </p>
-
             <p>
                 <label for="nmt-ua">Бали НМТ - Українська мова <span style="color: red;">*</span></label><br>
                 <input type="text" id="nmt-ua" name="nmt_ua" placeholder="Your answer" required>
             </p>
-
             <p>
                 <label for="nmt-history">Бали НМТ - Історія України <span style="color: red;">*</span></label><br>
                 <input type="text" id="nmt-history" name="nmt_history" placeholder="Your answer" required>
             </p>
-
             <p>
                 <label for="nmt-fourth">Четвертий предмет з НМТ і бали за ним <span style="color: red;">*</span></label><br>
                 <input type="text" id="nmt-fourth" name="nmt_fourth" placeholder="Your answer" required>
             </p>
-
             <p>
                 <label for="directions">Які напрями вам цікаві?</label><br>
                 <textarea id="directions" name="directions" rows="6" style="width: 100%;"></textarea>
             </p>
-
             <p style="text-align: right;">
                 <button type="submit">Submit</button>
             </p>
         </form>
     </section>
+
     <section id="reviews">
         <h2>Відгуки випускників.</h2>
         <article>
-            <p>Аудіо-відгук випускника:</p>
-            <audio controls>
-                <source src="audio/mpeg.m4a" type="audio/mpeg">
-                Ваш браузер не підтримує аудіоелемент.
-            </audio>
+            <div class="text_reviews">
+                <p>Аудіо-відгук випускника:</p>
+                <audio controls>
+                    <source src="audio/mpeg.m4a" type="audio/mpeg">
+                    Ваш браузер не підтримує аудіоелемент.
+                </audio>
+            </div>
         </article>
     </section>
+
     <section id="science">
         <h2>Наука та інновації.</h2>
         <img src="images/images.png" alt="Science">
         <article>
-            <p>Від аудиторії — до реального проєкту.</p>
-            <p>“Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах, розробляють ІТ- рішення, створюють стартапи та співпрацюють з компаніями- партнерами. На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати себе ще під час навчання. Дослідження, що перетворюються на продукт — саме тут це можливо.</p>
+            <div class="text_science">
+                <p>Від аудиторії — до реального проєкту.</p>
+                <p>“Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах, розробляють ІТ- рішення, створюють стартапи та співпрацюють з компаніями- партнерами.</p>
+            </div>
         </article>
     </section>
+
+    <section id="numbers">
+        <h2>Якщо в числах</h2>
+        <article>
+            <div class="text_numbers">
+                <h3>18</h3>
+                <p>Досвідчених викладачів</p>
+            </div>
+        </article>
+        <article>
+            <div class="text_numbers">
+                <h3>65</h3>
+                <p>Навчальних дисциплін</p>
+            </div>
+        </article>
+        <article>
+            <div class="text_numbers">
+                <h3>1 200+</h3>
+                <p>Талановитих випускників</p>
+            </div>
+        </article>
+        <article>
+            <div class="text_numbers">
+                <h3>∞</h3>
+                <p>Унікального досвіду</p>
+            </div>
+        </article>
+    </section>
+
     <section>
         <h2>Нам довіряють.</h2>
         <img src="images/logohai1.png" alt="Logo" title="Logo Sigma">
@@ -213,29 +254,43 @@
         <img src="images/logohai5.png" alt="Logo" title="Logo GlobalLogic">
         <img src="images/logohai6.png" alt="Logo" title="Logo Nix">
     </section>
+
     <section id="contact">
         <h2>Контакти.</h2>
         <address>
-            <p>61070, Харків, вул. Вадима Манька, 17</p>
-            <p>НАУ ім. М.Є.Жуковського "ХАІ</p>
-            <p>Кафедра інформаційно-комунікаційних технологій No504.</p>
+            <div class="text_contact">
+                <p>61070, Харків, вул. Вадима Манька, 17</p>
+                <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
+                <p>Кафедра інформаційно-комунікаційних технологій №504.</p>
+            </div>
         </address>
     </section>
+
     <section id="news">
         <h2>Новини.</h2>
         <video autoplay loop muted width="100%">
             <source src="video/news-preview.mp4" type="video/mp4">
             Ваш браузер не підтримує відеоелемент.
         </video>
+        <article>
+            <div class="text_news">
+                <h3>Викладачі кафедри взяли участь у міжнародній конференції MMAR 2026</h3>
+                <p>У Польщі відбулася міжнародна конференція MMAR 2026...</p>
+            </div>
+        </article>
+        <article>
+            <div class="text_news">
+                <h3>Вітаємо Раеда Аль-Сенайха із успішним захистом дисертації</h3>
+                <p>Аспірант кафедри успішно захистив дисертацію...</p>
+            </div>
+        </article>
     </section>
 </main>
+
 <footer>
     <address>
-        <a href="#">
-            <img src="images/logo.svg" alt="Логотип кафедри">
-        </a>
-        <p><a href="mailto:k504@khai.edu">k504@khai.edu</a> </p>
-        <p><a href="tel:+380995025775">+38 (099) 502-57-75</a> </p>
+        <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+        <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
     </address>
 </footer>
 </body>
