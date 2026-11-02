@@ -1,0 +1,13 @@
+body {
+  font-family: $font-stack;
+  background-color: $bg-color;
+  color: $main-color;
+  max-width: $widedesk;
+  margin: 50px auto;
+  padding: 0 $base-padding;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

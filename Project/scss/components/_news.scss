@@ -1,0 +1,15 @@
+#news {
+  article {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:not(:last-child) .text_news {
+      border-left: 1px solid $red;
+    }
+  }
+}
+
+.text_news {
+  padding: 10px;
+}
