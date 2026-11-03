@@ -1,3 +1,32 @@
+@use '../variables/fonts' as *;
+
 .text_specialties {
-    @include card-style;
+    h3 {
+        font-family: $geologica;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-family: $comfortaa;
+        font-size: 14px;
+        color: var(--grey-color);
+    }
 }
+.text_specialties {
+    border: 1px solid var(--grey-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#specialties {
+    // Отступы между самими карточками (<article>)
+    article {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+

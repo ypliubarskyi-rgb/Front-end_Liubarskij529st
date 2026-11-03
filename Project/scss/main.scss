@@ -1,14 +1,14 @@
-@import "variables/breakpoints";
-@import "variables/colors";
-@import "variables/fonts";
-@import "variables/typography";
-@import "abstraction/mixins";
+@use 'variables/fonts';
+@use 'variables/colors';
+@use 'variables/breakpoints';
+@use 'variables/typography';
+@use 'abstraction/mixins';
 
-@import "base/general";
-@import "base/header";
-@import "base/footer";
+@use 'base/general';
+@use 'base/header';
+@use 'base/footer';
 
-@import "components/feedback";
-@import "components/specialties";
-@import "components/in-numbers";
-@import "components/news";
+@use 'components/specialties';
+@use 'components/in-numbers';
+@use 'components/feedback';
+@use 'components/news';

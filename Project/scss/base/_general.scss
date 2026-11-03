@@ -1,7 +1,9 @@
+@use '../variables/colors' as *;
+@use '../variables/breakpoints' as *;
+
 body {
-  font-family: $font-stack;
-  background-color: $bg-color;
-  color: $main-color;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
   max-width: $widedesk;
   margin: 50px auto;
   padding: 0 $base-padding;
@@ -10,4 +12,71 @@ body {
 section {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+header {
+  padding: 16px 0;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+a {
+  color: var(--red-color);
+}
+
+.button {
+  background: var(--red-color);
+  color: var(--primary-text-color);
+  width: fit-content;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin: 40px 0;
+  border: 1px solid var(--red-color);
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    background: var(--red-hover-color);
+    border-color: var(--red-hover-color);
+  }
+
+  &:focus {
+    background: var(--primary-color);
+  }
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  background: transparent;
+  border: 1px solid var(--grey-color);
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: var(--silver-color);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    padding: 8px;
+  }
+
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
 }

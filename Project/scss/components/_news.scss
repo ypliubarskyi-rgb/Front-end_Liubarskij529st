@@ -1,11 +1,26 @@
-#news {
-  article {
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
 
-    &:not(:last-child) .text_news {
-      border-left: 1px solid $red;
+@use '../variables/fonts' as *;
+
+.text_news {
+  h3 {
+    font-family: $geologica;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-family: $comfortaa;
+    font-size: 14px;
+    color: var(--grey-color);
+  }
+}
+
+#news {
+  article:not(:last-child) {
+    margin-bottom: 15px;
+
+    .text_news {
+      border-left: 1px solid var(--red-color);
     }
   }
 }
