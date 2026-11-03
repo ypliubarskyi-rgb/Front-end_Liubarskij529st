@@ -1,3 +1,15 @@
-.text_reviews  {
-    @include card-style;
+@use '../variables/fonts' as *;
+
+.text_reviews {
+  p {
+    font-family: $comfortaa;
+    font-size: 14px;
+    color: var(--grey-color);
   }
+}
+
+.text_reviews {
+  border: 1px solid var(--grey-color);
+  padding: 20px;
+  border-radius: 20px;
+}

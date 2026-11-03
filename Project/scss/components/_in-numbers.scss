@@ -1,11 +1,26 @@
-#numbers {
-  article {
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
+@use '../variables/fonts' as *;
 
-    &:not(:last-child) .text_numbers {
-      border-left: 1px solid $red;
+.text_numbers {
+  h3 {
+    font-family: $geologica;
+    font-size: 36px;
+    color: var(--red-color);
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-family: $comfortaa;
+    font-size: 14px;
+    color: var(--grey-color);
+  }
+}
+
+#numbers {
+  article:not(:last-child) {
+    margin-bottom: 15px;
+
+    .text_numbers {
+      border-left: 1px solid var(--red-color);
     }
   }
 }
