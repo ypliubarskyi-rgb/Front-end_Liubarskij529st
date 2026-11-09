@@ -1,5 +1,151 @@
-@use '../variables/breakpoints' as *;
+@use '../variables/colors' as *;
 
 header {
-  padding: $base-padding 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+
+  .logo {
+    width: 104px;
+
+    img {
+      display: block;
+      max-width: 100%;
+
+    }
+  }
+
+  nav {
+    width: calc(100% - 292px);
+
+    .main-menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      font-weight: bold;
+
+      .menu-link {
+        text-decoration: none;
+        color: var(--primary-text-color);
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+          color: var(--red-color);
+        }
+      }
+    }
+  }
+
+  .search {
+    width: 24px;
+    margin-left: auto;
+
+    a {
+      display: block;
+    }
+  }
+
+  .lang {
+    width: 104px;
+
+    .lang-wrapper {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 38px;
+        height: 24px;
+        border-radius: 100px;
+        border: 1px solid var(--primary-text-color);
+        order: 2;
+      }
+
+      li {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+        color: var(--grey-color);
+        position: relative;
+
+        a {
+          text-decoration: none;
+          color: var(--grey-color);
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 24px;
+
+          &.is-active {
+            color: var(--primary-text-color);
+          }
+        }
+
+        &.ua {
+          order: 1;
+
+          a {
+            &::after {
+              content: '';
+              display: none;
+              width: 18px;
+              height: 18px;
+              border-radius: 50%;
+              background: url("../images/uk.png") no-repeat;
+              background-size: 18px 18px;
+              position: absolute;
+              top: 3px;
+              right: -31px;
+            }
+
+            &.is-active {
+              &::after {
+                display: block;
+              }
+            }
+          }
+        }
+
+        &.en {
+          order: 3;
+
+          a {
+            &::before {
+              content: '';
+              display: none;
+              width: 18px;
+              height: 18px;
+              border-radius: 50%;
+              background: url("../images/en.png") no-repeat;
+              background-size: 18px 18px;
+              position: absolute;
+              top: 3px;
+              left: -31px;
+            }
+
+            &.is-active {
+              &::before {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
