@@ -12,30 +12,49 @@
 <body>
 
 <header>
-    <a href="#">
-        <img src="images/logo.svg" alt="Логотип кафедри">
-    </a>
+    <div class="logo">
+        <a href="#">
+            <img src="images/logo.svg" alt="Логотип кафедри">
+        </a>
+    </div>
+
     <nav>
-        <ul>
-            <li><a href="#specialties">Спеціальності</a></li>
-            <li><a href="#science">Наука</a></li>
-            <li><a href="#news">Новини</a></li>
-            <li><a href="#contact">Контакти</a></li>
+        <ul class="main-menu">
+            <li><a href="#specialties" class="menu-link">Спеціальності</a></li>
+            <li><a href="#science" class="menu-link">Наука</a></li>
+            <li><a href="#news" class="menu-link">Новини</a></li>
+            <li><a href="#contact" class="menu-link">Контакти</a></li>
         </ul>
     </nav>
-    <a href="#">
-        <img src="images/magnifier.svg" alt="Пошук" width="32">
-    </a>
-    <span>
-        <a href="?lang=ua">UA</a> | <a href="?lang=en">EN</a>
-    </span>
+
+    <div class="search">
+        <a href="#">
+            <img src="images/magnifier.svg" alt="Пошук" width="24">
+        </a>
+    </div>
+
+    <div class="lang">
+        <ul class="lang-wrapper">
+            <li class="ua"><a href="?lang=ua" class="is-active">UA</a></li>
+            <li class="en"><a href="?lang=en">EN</a></li>
+        </ul>
+    </div>
 </header>
 
 <main>
-    <section id="Banner">
-        <img src="images/Man.png" alt="Banner">
-        <h1>Створюй майбутнє. Тут і зараз!</h1>
-        <p>Вибери не просто освіту - обери шлях до своего технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+    <section id="banner">
+        <div class="content-wrapper">
+            <h1>Створюй майбутнє. Тут і зараз!</h1>
+            <div class="description">
+                <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+            </div>
+            <a href="#specialties" class="button">
+                <p>Дізнатися більше</p>
+            </a>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/Man.png" alt="Banner">
+        </div>
     </section>
 
     <section id="specialties">
