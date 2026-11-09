@@ -1,3 +1,5 @@
+@use '../variables/breakpoints' as *;
+
 header {
   padding: $base-padding 0;
 }
