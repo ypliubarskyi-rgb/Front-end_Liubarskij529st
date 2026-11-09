@@ -375,7 +375,8 @@ footer {
   align-items: center;
 }
 #banner .content-wrapper {
-  width: 67%;
+  width: 50%;
+  max-width: 580px;
   display: flex;
   flex-direction: column;
   gap: 30px;
