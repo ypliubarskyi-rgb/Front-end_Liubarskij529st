@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uk" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout | Department of ICT</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="grid-page">
+
+<header class="grid-header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Логотип кафедри">
+        </a>
+    </div>
+    <nav>
+        <ul class="main-menu">
+            <li><a href="index.html" class="menu-link">На головну</a></li>
+            <li><a href="index.html#specialties" class="menu-link">Спеціальності</a></li>
+            <li><a href="index.html#news" class="menu-link">Новини</a></li>
+            <li><a href="grid.html" class="menu-link">Grid Layout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<aside class="grid-nav">
+    <h3>Навігація</h3>
+    <ul>
+        <li><a href="#intro">Про CSS Grid</a></li>
+        <li><a href="#gallery">Галерея кафедри</a></li>
+        <li><a href="#features">Переваги сітки</a></li>
+    </ul>
+</aside>
+
+<main class="grid-main">
+    <section id="intro">
+        <h1>Демонстрація CSS Grid Layout</h1>
+        <p>CSS Grid — це потужна двовимірна система компонування, яка дозволяє одночасно керувати як рядками, так і стовпцями вебсторінки. На цій сторінці загальний каркас побудовано за допомогою властивості <code>grid-template-areas</code>.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея кафедри ІКТ (CSS Grid Gallery)</h2>
+        <div class="grid-gallery">
+            <div class="gallery-item">
+                <img src="images/images.png" alt="Наука та інновації">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Man.png" alt="Студент кафедри">
+            </div>
+            <div class="gallery-item">
+                <img src="images/logohai1.png" alt="Партнер Sigma">
+            </div>
+            <div class="gallery-item">
+                <img src="images/logohai2.png" alt="Партнер EPAM">
+            </div>
+            <div class="gallery-item">
+                <img src="images/logohai3.png" alt="Партнер SoftServe">
+            </div>
+            <div class="gallery-item">
+                <img src="images/logohai4.png" alt="Партнер DataArt">
+            </div>
+        </div>
+    </section>
+</main>
+
+<aside class="grid-sidebar">
+    <h3>Корисна інформація</h3>
+    <p>Кафедра інформаційно-комунікаційних технологій №504 готує фахівців за сучасними освітніми програмами.</p>
+    <p><strong>Адреса:</strong><br>61070, Харків, вул. Вадима Манька, 17</p>
+</aside>
+
+<footer class="grid-footer">
+    <p>© 2026 Кафедра інформаційно-комунікаційних технологій №504 ХАІ. Виконано з використанням CSS Grid.</p>
+</footer>
+
+</body>
+</html>
