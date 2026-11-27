@@ -2,8 +2,7 @@
 <html lang="uk" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage | Department of Information and Communication Technologies</title>
 
@@ -13,12 +12,15 @@
 
 <header>
     <div class="logo">
-        <a href="#">
+        <a href="index.html">
             <img src="images/logo.svg" alt="Логотип кафедри">
         </a>
     </div>
 
     <nav>
+        <div class="burger-menu">
+            <button class="menu-toggle button" type="button">Меню</button>
+        </div>
         <ul class="main-menu">
             <li><a href="#specialties" class="menu-link">Спеціальності</a></li>
             <li><a href="#science" class="menu-link">Наука</a></li>
@@ -30,7 +32,7 @@
 
     <div class="search">
         <a href="#">
-            <img src="images/magnifier.svg" alt="Пошук" width="24">
+            <img src="images/magnifier.svg" alt="Пошук">
         </a>
     </div>
 
@@ -47,10 +49,10 @@
         <div class="content-wrapper">
             <h1>Створюй майбутнє. Тут і зараз!</h1>
             <div class="description">
-                <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+                <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
             </div>
-            <a href="#specialties" class="button">
-                <p>Дізнатися більше</p>
+            <a href="#contact" class="button">
+                <p>Хочу вступити</p>
             </a>
         </div>
         <div class="image-wrapper">
@@ -69,7 +71,7 @@
         <article>
             <div class="text_specialties">
                 <h3>F6 - бакалаврський рівень «Штучний інтелект та інформаційні системи»</h3>
-                <p>Кафедра Інформаційно-комунікаційних технологій імені О.О. Зеленського має понад 60 років досвіду освітньої та наукової діяльності. Сьогодні кафедра готує висококваліфікованих фахівців у галузі інформаційних технологій, електронних комунікацій та інфокомунікаційних систем за наступними програмами:</p>
+                <p>Кафедра Інформаційно-комунікаційних технологій імені О.О. Зеленського має понад 60 років досвіду освітньої та наукової діяльності. Сьогодні кафедра готує висококвафікованих фахівців у галузі інформаційних технологій, електронних комунікацій та інфокомунікаційних систем за наступними програмами:</p>
             </div>
         </article>
     </section>
@@ -77,7 +79,7 @@
     <section id="curriculum">
         <h2>1 Курс</h2>
 
-        <table border="1">
+        <table>
             <thead>
             <tr>
                 <th>1 семестр</th>
@@ -118,7 +120,7 @@
 
         <br>
 
-        <table border="1">
+        <table>
             <thead>
             <tr>
                 <th>2 семестр</th>
@@ -300,7 +302,7 @@
         <article>
             <div class="text_news">
                 <h3>Вітаємо Раеда Аль-Сенайха із успішним захистом дисертації</h3>
-                <p>Аспірант кафедри успішно захистив дисертацію...</p>
+                <p>Аспірант кафедри успішно захистив дисерцію...</p>
             </div>
         </article>
     </section>
@@ -308,12 +310,23 @@
 
 <footer>
     <address>
-        <a href="#">
+        <a href="index.html">
             <img src="images/logo.svg" alt="Логотип кафедри">
         </a>
         <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
         <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
     </address>
 </footer>
+
+<script>
+    const menuBtn = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('.main-menu');
+
+    if (menuBtn && mainMenu) {
+        menuBtn.addEventListener('click', () => {
+            mainMenu.classList.toggle('show');
+        });
+    }
+</script>
 </body>
 </html>

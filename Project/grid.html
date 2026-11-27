@@ -15,6 +15,9 @@
         </a>
     </div>
     <nav>
+        <div class="burger-menu">
+            <button class="menu-toggle button" type="button">Меню</button>
+        </div>
         <ul class="main-menu">
             <li><a href="index.html" class="menu-link">На головну</a></li>
             <li><a href="index.html#specialties" class="menu-link">Спеціальності</a></li>
@@ -29,7 +32,6 @@
     <ul>
         <li><a href="#intro">Про CSS Grid</a></li>
         <li><a href="#gallery">Галерея кафедри</a></li>
-        <li><a href="#features">Переваги сітки</a></li>
     </ul>
 </aside>
 
@@ -74,5 +76,15 @@
     <p>© 2026 Кафедра інформаційно-комунікаційних технологій №504 ХАІ. Виконано з використанням CSS Grid.</p>
 </footer>
 
+<script>
+    const menuBtn = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('.main-menu');
+
+    if (menuBtn && mainMenu) {
+        menuBtn.addEventListener('click', () => {
+            mainMenu.classList.toggle('show');
+        });
+    }
+</script>
 </body>
 </html>
